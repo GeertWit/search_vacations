@@ -1,5 +1,4 @@
-<!-- <h1>Search Users</h1>
-<%= link_to 'Advanced mode', advanced_search_users_path %> -->
+
 
 <%= search_form_for @search do |f| %>
   <fieldset>
@@ -18,19 +17,10 @@
     </ul>
   </fieldset>
 
- <!--  <fieldset>
-    <legend>User's Posts</legend>
-    <ul>
-      <li>
-        <%= f.label :posts_title_cont %>
-        <%= f.text_field :posts_title_cont %>
-      </li>
-    </ul>
-  </fieldset> -->
 
 <!--   <%= label_tag :distinct, 'Return distinct records?' %>
-  <%= check_box_tag :distinct, '1', params[:distinct].to_i == 1 %>
+  <%= check_box_tag :distinct, '1', params[:distinct].to_i == 1 %> -->
   <%= f.submit %>
 <% end %>
- -->
+
 <%= render 'results' %>
